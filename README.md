@@ -89,3 +89,26 @@ In the "Method settings" section, select the "GET" method. In the "Integration t
 **7. Configure the Discord application to use the API Gateway endpoint.**
 
 In the Discord Developer Portal, go to the "OAuth & Permissions" tab. In the "Bot Endpoints" section, enter the URL of the
+
+---
+To create a GitHub OAuth application, follow these steps:
+
+1. Go to the GitHub Developer Settings page: Visit the GitHub website and log in to your account. From your account dropdown, select "Settings", then navigate to the "Developer settings" section.
+
+2. Create a new OAuth application: In the Developer settings page, click on "OAuth Apps" in the left sidebar. Then, click on the "New OAuth App" button.
+
+3. Provide application details: Fill out the required fields in the new OAuth application form. Here are some important fields:
+
+   - **Application name**: Enter a name for your OAuth application.
+   - **Homepage URL**: Provide the URL of your application's homepage.
+   - **Authorization callback URL**: Enter the URL where GitHub should redirect users after authorization. This is typically the URL of a callback endpoint in your application.
+
+4. Configure application permissions: Choose the scopes or permissions that your OAuth application requires. These permissions determine the level of access your application will have when users authenticate with it.
+
+5. Register the application: After filling out all the required information, click on the "Register application" button to create your OAuth application.
+
+6. Retrieve your OAuth application credentials: Once your application is registered, you will be redirected to the application details page. On this page, you can find your **Client ID** and **Client Secret**. These credentials will be needed to authenticate your application with GitHub's OAuth API.
+
+Keep in mind that you should securely store your client secret and avoid exposing it publicly or committing it to version control. It's recommended to use environment variables or a secure configuration mechanism to manage these credentials.
+
+That's it! You have now created a GitHub OAuth application, which will allow your application to authenticate users and interact with the GitHub API on their behalf.
